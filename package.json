@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.16.2",
     "bitcore-lib-dash": "^0.14.0",
     "bitcore-mnemonic-dash": "^1.0.3"
   }
