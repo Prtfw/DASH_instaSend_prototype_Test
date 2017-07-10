@@ -1,0 +1,15 @@
+{
+  "name": "testinsta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bitcore-lib-dash": "^0.14.0",
+    "bitcore-mnemonic-dash": "^1.0.3"
+  }
+}
