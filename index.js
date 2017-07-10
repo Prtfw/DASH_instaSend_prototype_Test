@@ -1,3 +1,9 @@
+// things to abstract:
+/*
+
+
+*/
+
 const axios = require('axios');
 
 
@@ -211,9 +217,9 @@ pub addy <Address: yRz9ktGfb73WC6hYkTg9HS5uxWftY3RSUm, type: pubkeyhash, network
 // ====== none HD version ========>
 
 var utxo = {
-  "txId" : "40fc6da2fd2784db9b157e39661c25ab538c3cbc2ed34b06e5118c648e9c60c6",
+  "txId" : "40fc6da2fd2784db9b157e39661c25ab538c3cbc2ed34b06e5118c648e9c60c6",  //need to be updated
   "outputIndex" : 0,
-  "address" : "ydfu3TZGDUteRYp77M6Dt8mzAbf7rYA9Qm",
+  "address" : "ydfu3TZGDUteRYp77M6Dt8mzAbf7rYA9Qm",                             //need to be updated
   "script" : "76a914be5852c150a793cbd88a57643c19a72fe6fd69b688ac",
   "satoshis" : 100000000000
 };
@@ -221,14 +227,14 @@ var utxo = {
 
 var transaction = new bitcore.Transaction()
   .from(utxo)
-  .to('yRz9ktGfb73WC6hYkTg9HS5uxWftY3RSUm', 99999880000)
-  .sign('8489be2f85bbee14ba1fe2d0eaffac4dd4dc007fdd7b11a53189d88303e8bed9');
+  .to('yRz9ktGfb73WC6hYkTg9HS5uxWftY3RSUm', 99999880000)                        //need to be updated
+  .sign(derived1.toObject().privateKey);
 
 console.log(transaction)
 
 
 
 
-// //successful result: {
+// //successful instasend result: {
 //     "txid": "9f75753cdb66f857c3537462b943c553a1156fbbb67938f741f01dcefdb77c0a"
 // }
